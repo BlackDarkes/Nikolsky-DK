@@ -2,25 +2,44 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1A1C22;
+
+  --primary-bg: #F5F7F8;
+  --secondary-bg: #008B8B;
+  --secondary-bg-opacity: #30384733;
+  --card-bg: #23262D; 
+
+  --accent-color: #D4AF37;
+  --second-color: #D4AF37;
+  --navbar-color: #FFFFFF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --monserrat: var(--font-montserrat);
+  --monrope: var(--font-manrope);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--primary-bg);
+    --foreground: var(--second-color);
   }
 }
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope);
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: var(--monserrat);
 }
