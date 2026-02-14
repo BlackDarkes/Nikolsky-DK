@@ -18,7 +18,7 @@ export const BurgerMenu = ({
     <div
       className={`
         fixed top-0 left-0 w-full h-full bg-(--secondary-bg-opacity) text-(--second-color) transition duration-600 opacity-0 \r\n
-        ${isOpen ? "translate-x-0 opacity-100" : "translate-x-full"}
+        ${isOpen ? "translate-x-0 opacity-100" : "translate-x-full"} z-400
       `}
       onClick={handleOpen}
     >

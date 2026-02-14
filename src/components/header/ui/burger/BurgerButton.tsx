@@ -17,7 +17,7 @@ export const BurgerButton = ({ handleOpen, isOpen }: IBurgerButtonProps) => {
         cursor-pointer \r\n
         ${ isOpen ? "before:rotate-45 before:translate-y-2.5 after:-rotate-45 after:-translate-y-3" : "" } \r\n
         lg:hidden \r\n
-        z-400
+        z-500
       `}
       onClick={handleOpen}
     >

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tailwind-scrollbar-hide/v4";
 
 :root {
   --background: #ffffff;
@@ -24,8 +25,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --monserrat: var(--font-montserrat);
-  --monrope: var(--font-manrope);
+  --inria-serif: var(--font-inria-serif);
+  --instrument-sans: var(--font-instrument-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,14 +40,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-manrope);
+  font-family: var(--inria-serif), serif;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-  font-family: var(--monserrat);
+
+main {
+  margin-top: 108px;
 }
