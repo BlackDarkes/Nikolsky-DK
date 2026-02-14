@@ -7,10 +7,17 @@
   --primary-bg: #F5F7F8;
   --secondary-bg: #008B8B;
   --secondary-bg-opacity: #30384733;
-  --card-bg: #23262D; 
+  --mugs-bg: #008b8b99; 
+  --master-classes-bg: #23262DB3;
+  --about-us-bg: #008B8B1A;
+  --button-bg: #FF7F50;
 
   --accent-color: #D4AF37;
-  --second-color: #D4AF37;
+  --primary-color: #FFFFFF;
+  --secondary-color: #000000;
+
+  --placeholder-color: #1a2b3c80;
+  --border-color: #008B8B;
   --navbar-color: #FFFFFF;
 }
 
