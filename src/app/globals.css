@@ -43,6 +43,9 @@ body {
   font-family: var(--inria-serif), serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 main {
   margin-top: 108px;

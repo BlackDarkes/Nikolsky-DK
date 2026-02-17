@@ -8,7 +8,7 @@ import { FooterBlock } from "./ui/block/FooterBlock";
 
 export const Footer = () => {
   return (
-    <footer className="bg-(--secondary-bg)">
+    <footer id="contacts" className="bg-(--secondary-bg)">
       <Container>
         <FooterBlock
           socialItems={FOOTER_ITEMS_SOCIAL}
