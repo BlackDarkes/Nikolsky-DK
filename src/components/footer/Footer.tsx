@@ -8,14 +8,14 @@ import { FooterBlock } from "./ui/block/FooterBlock";
 
 export const Footer = () => {
   return (
-    <footer>
-      <Container className="flex flex-col">
+    <footer className="bg-(--secondary-bg)">
+      <Container>
         <FooterBlock
           socialItems={FOOTER_ITEMS_SOCIAL}
           secureItems={FOOTER_ITEMS_SECURE}
         />
-        <FooterSecure />
       </Container>
+      <FooterSecure />
     </footer>
   );
 };
