@@ -6,7 +6,7 @@ interface IRadioProps {
 export const Radio = ({ name, message }: IRadioProps) => {
   return (
     <div>
-      <label className="flex gap-x-1.25 text-5 font-(family-name:--instrument-sans)">
+      <label className="flex gap-x-1.25 text-5 text-[clamp(16px,4vw,20px)] font-(family-name:--instrument-sans)">
         <input type="radio" name={name} id="" /> {message}
       </label>
     </div>

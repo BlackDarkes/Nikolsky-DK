@@ -5,8 +5,8 @@ import { SubmitButton } from "./SubmitButton";
 
 export const Form = () => {
   return (
-    <form>
-      <div>
+    <form className="flex flex-col w-[min(100%,750px)] ">
+      <div className="flex gap-x-[clamp(30px,4vw,50px)]">
         <Radio name="type" message="Мастер класс" />
         <Radio name="type" message="Кружки" />
       </div>
