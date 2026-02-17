@@ -4,7 +4,7 @@ import { MUGS_ITEMS } from "@/constants/mugs-items";
 
 export const Hero = () => {
   return (
-    <section id="mugs" className="pt-[clamp(65px,12vw,120px)]">
+    <section id="mugs" className="py-[clamp(65px,12vw,120px)]">
       <Container>
         <HeroList mugsItems={MUGS_ITEMS}/>
       </Container>
