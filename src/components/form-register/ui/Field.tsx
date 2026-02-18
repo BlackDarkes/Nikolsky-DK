@@ -31,7 +31,7 @@ export const Field = ({
       <label
         htmlFor={id}
         className={`
-          absolute left-2.5  transition-all text-[clamp(18px,4vw,20px)]  duration-600 pointer-events-none \n\r
+          absolute left-2.5  transition-all text-[clamp(18px,4vw,20px)]  duration-600 pointer-events-none 
           ${focused || value ? "-translate-y-full scale-90" : "translate-y-0 scale-100 text-(--placeholder-color)"}
         `}
       >
@@ -46,7 +46,7 @@ export const Field = ({
         onChange={(e) => handleValue(e)}
         value={value}
         className={`
-          w-full p-[12px_10px] h-full  transition duration-400 outline-none border \r\n
+          w-full p-[12px_10px] h-full  transition duration-400 outline-none border
           ${
             focused || value
               ? "border-(--border-color) rounded-xl"
