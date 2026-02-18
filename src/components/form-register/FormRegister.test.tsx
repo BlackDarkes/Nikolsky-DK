@@ -6,18 +6,23 @@ import userEvent from "@testing-library/user-event";
 describe("Компонент Form", () => {
   afterEach(cleanup);
 
-  it("Должен показать ошибку при некорректном заполнении поля ФИО", async () => {
+  it("Должен показать ошибку при некорректном заполнении поля ФИО (неполное имя)", async () => {
     const user = userEvent.setup();
+    render(<FormRegister />);
     // const result = render(<FormRegister />);
 
     // screen.debug();
 
-    const nameInput = screen.getByRole('textbox', { name: /ФИО/i });
+    const nameInput = screen.getByRole("textbox", { name: /фио/i });
     const submitButton = screen.getByRole("button", { name: /записаться/i });
 
     await user.type(nameInput, "Иванов Иван");
     await user.click(submitButton);
 
-    expect(screen.getByText("Поле 'ФИО (Иванов Иван Иванович)' должно содержать только кириллицу и пробелы")).toBeInTheDocument();
-  })
-})
+    await waitFor(() => {
+      expect(
+        screen.getByText(/должно содержать только кириллицу и пробелы/i),
+      ).toBeDefined();
+    });
+  });
+});
