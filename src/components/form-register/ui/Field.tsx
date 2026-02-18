@@ -1,21 +1,29 @@
 "use client";
 
-import { HTMLInputTypeAttribute, useState } from "react";
+import { ChangeEvent, HTMLInputTypeAttribute, useState } from "react";
 
 interface IFieldProps {
   label: string;
   name: string;
   id: string;
   type: HTMLInputTypeAttribute;
+  value: string;
+  handleValue: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Field = ({ label, name, id, type }: IFieldProps) => {
-  const [value, setValue] = useState<string>("");
+export const Field = ({
+  label,
+  name,
+  id,
+  type,
+  value,
+  handleValue,
+}: IFieldProps) => {
   const [focused, setFocused] = useState(false);
 
   const handleFocus = () => {
     setFocused(true);
-    console.log("focus");
+    console.log(name)
   };
 
   return (
@@ -35,15 +43,15 @@ export const Field = ({ label, name, id, type }: IFieldProps) => {
         id={id}
         onFocus={handleFocus}
         onBlur={() => setFocused(false)}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => handleValue(e)}
         value={value}
         className={`
           w-full p-[12px_10px] h-full  transition duration-400 outline-none border \r\n
-              ${
-                focused || value
-                  ? "border-(--border-color) rounded-xl"
-                  : "border-t-transparent border-x-transparent border-b-(--border-color) rounded-none"
-              }
+          ${
+            focused || value
+              ? "border-(--border-color) rounded-xl"
+              : "border-t-transparent border-x-transparent border-b-(--border-color) rounded-none"
+          }
         `}
       />
     </div>
