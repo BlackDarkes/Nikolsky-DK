@@ -20,6 +20,8 @@
   --placeholder-color: #1a2b3c80;
   --border-color: #008B8B;
   --navbar-color: #FFFFFF;
+
+  --shadow-block: 4px 4px 12px rgba(0, 0, 0, 0.35);
 }
 
 @theme inline {

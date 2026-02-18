@@ -10,7 +10,7 @@ export const MasterClassesListItem = ({
   masterClass,
 }: IMasterClassesListItemProps) => {
   return (
-    <li className="relative">
+    <li className="relative transition duration-400 shadow-(--shadow-block) rounded-xl hover:opacity-70" title={masterClass.name}>
       <Link href={"#"}>
         <Image
           src={masterClass.masterClass}

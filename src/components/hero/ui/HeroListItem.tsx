@@ -8,7 +8,7 @@ interface IHeroListItemProps {
 
 export const HeroListItem = ({ mugItem }: IHeroListItemProps) => {
   return (
-    <li className="relative w-[clamp(280px,30vw,320px)] h-full shrink-0 snap-center z-20">
+    <li className="relative w-[clamp(280px,30vw,320px)] h-full shrink-0 snap-center rounded-xl transition duration-400 shadow-(--shadow-block) z-20 hover:opacity-70" title={mugItem.name}>
       <Link href={"#"}>
         <Image
           src={mugItem.mug}
