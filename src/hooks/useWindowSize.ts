@@ -3,29 +3,32 @@
 import { useEffect, useState } from "react";
 
 export const useWindowSize = () => {
-  const [size, setSize] = useState({ width: 0, height: 0 });
+  const [size, setSize] = useState<{ width?: number; height?: number }>({
+    width: undefined,
+    height: undefined,
+  });
 
   useEffect(() => {
-    let timeoutId: ReturnType<typeof setTimeout> | null = null;
+    let timeoutId: ReturnType<typeof setTimeout>;
 
-    const handleResize = () => {
-      if (timeoutId) clearTimeout(timeoutId);
-      
-      timeoutId = setTimeout(() => {
-        setSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      }, 150);
+    const updateSize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     };
 
-    handleResize();
+    const handleResizeWithDebounce = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(updateSize, 150);
+    };
 
-    window.addEventListener("resize", handleResize);
+    updateSize();
 
+    window.addEventListener("resize", handleResizeWithDebounce);
     return () => {
-      window.removeEventListener("resize", handleResize);
-      if (timeoutId) clearTimeout(timeoutId);
+      window.removeEventListener("resize", handleResizeWithDebounce);
+      clearTimeout(timeoutId);
     };
   }, []);
 
