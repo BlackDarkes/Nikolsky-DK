@@ -19,11 +19,11 @@ export const Field = ({
   value,
   handleValue,
 }: IFieldProps) => {
-  const [focused, setFocused] = useState(false);
+  const [focused, setFocused] = useState<boolean>(false);
+  const [hover, setHover] = useState<boolean>(false);
 
   const handleFocus = () => {
     setFocused(true);
-    console.log(name)
   };
 
   return (
@@ -33,6 +33,7 @@ export const Field = ({
         className={`
           absolute left-2.5  transition-all text-[clamp(18px,4vw,20px)]  duration-600 pointer-events-none 
           ${focused || value ? "-translate-y-full scale-90" : "translate-y-0 scale-100 text-(--placeholder-color)"}
+          ${hover ? "text-(--secondary-color)" : ""}
         `}
       >
         {label}
@@ -44,6 +45,8 @@ export const Field = ({
         onFocus={handleFocus}
         onBlur={() => setFocused(false)}
         onChange={(e) => handleValue(e)}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
         value={value}
         className={`
           w-full p-[12px_10px] h-full  transition duration-400 outline-none border
