@@ -1,0 +1,6 @@
+:HL["/Nikolsky-DK/_next/static/chunks/78de451fb38bf56a.css","style"]
+:HL["/Nikolsky-DK/_next/static/media/7d8779d6fdf17937-s.p.c7c23470.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Nikolsky-DK/_next/static/media/ad47219e26fd715f-s.p.dbce029d.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Nikolsky-DK/_next/static/media/c4e0361d05364de3-s.p.c3ab4693.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Nikolsky-DK/_next/static/media/f06bf9da926bae75-s.p.c68a79fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"buildId":"l7FA7uxUfzq1Vqv5VWPw6","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
