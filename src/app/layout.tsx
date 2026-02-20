@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: "Nikolsky DK, Никольский ДК",
   authors: [{ name: "Daniil Gordeev", url: "https://github.com/BlackDarkes" }],
   icons: {
-    icon: "/favicon.png",
+    icon: "/Nikolsky-DK/favicon.png",
   },  
 };
 
