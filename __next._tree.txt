@@ -3,4 +3,4 @@
 :HL["/Nikolsky-DK/_next/static/media/ad47219e26fd715f-s.p.dbce029d.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/Nikolsky-DK/_next/static/media/c4e0361d05364de3-s.p.c3ab4693.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/Nikolsky-DK/_next/static/media/f06bf9da926bae75-s.p.c68a79fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"buildId":"kchFzuq-X_Dw8BAYULAYV","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"Fmt9xh2t30MV01QQBXwO4","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
