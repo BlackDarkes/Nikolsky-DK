@@ -11,7 +11,7 @@ interface IBurgerProps {
 export const Burger = ({ handleOpen, isOpen }: IBurgerProps) => {
   const { width } = useWindowSize();
 
-  if (width >= 1024) return null;
+  if (width !== undefined && width >= 1024) return null;
 
   return (
     <>
