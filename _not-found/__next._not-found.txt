@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[84916,["/Nikolsky-DK/_next/static/chunks/e5ebcb019269227a.js","/Nikolsky-DK/_next/static/chunks/bc0aa6c15581d579.js"],"default"]
 3:I[46792,["/Nikolsky-DK/_next/static/chunks/e5ebcb019269227a.js","/Nikolsky-DK/_next/static/chunks/bc0aa6c15581d579.js"],"default"]
-0:{"buildId":"l7FA7uxUfzq1Vqv5VWPw6","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"kchFzuq-X_Dw8BAYULAYV","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
